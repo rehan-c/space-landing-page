@@ -3,7 +3,7 @@ body {
     background-color: grey;
     color: white;
     overflow-x: hidden;
-    background: url('https://cdn.spacetelescope.org/archives/images/wallpaper5/heic1712a.jpg');
+    background: url('./img/bg-blur.png');
     min-height: 100vh;
     display: flex;
     flex-direction: column;
