@@ -9,6 +9,12 @@ body {
     flex-direction: column;
 }
 
+@media (min-width: 3500px) {
+    body {
+        background: url('./img/bg-blur-4k.png');
+    }
+}
+
 h1 {
     background: hsl(0 0% 100% / 0.1);
     padding-right: 3px;
