@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+    <title>Home (navbar-and-carousel)</title>
+</head>
+<body>
+    <header class="primary-header flex">
+        <div>
+            
+            <h1><img src="icon.svg" class="header-logo"></img>REHAN C</h1>
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">MENU</span>
+        </button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                    <a href="index.html">
+                        <span aria-hidden="true">00</span>HOME
+                    </a>
+                <li>
+                    <a href="#">
+                        <span aria-hidden="true">01</span>CODE
+                    </a>
+                <li>
+                    <a href="#">
+                        <span aria-hidden="true">02</span>MUSIC
+                    </a>
+                <li>
+                    <a href="#">
+                        <span aria-hidden="true">03</span>TECHNOLOGY
+                    </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left is-hidden">
+                <img src="img/left.svg" alt="">
+            </button>
+
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">
+                        <p class="carousel-text">
+                            I CODE FOR THE WEB.
+                        </p>
+                        <img class="carousel__image" src="img/slide-1.webp" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <p class="carousel-text">
+                            <a href="#">I COMPOSE MUSIC.</a>
+                        </p>
+                        <img class="carousel__image" src="img/slide-2.webp" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <p class="carousel-text">
+                            <a href="https://github.com/rehan-c">VIEW MY GITHUB.</a>
+                        </p>
+                        <img class="carousel__image" src="img/slide-3.webp" alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <button class="carousel__button carousel__button--right">
+                <img src="img/right.svg" alt="">
+            </button>
+
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>ESA/Hubble</p>
+    </footer>
+</body>
+</html>
