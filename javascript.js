@@ -102,7 +102,10 @@ dotsNav.addEventListener('click', e => {
 var carouselHeight = document.querySelector('.carousel').clientHeight;
 
 var carouselTextElements = document.querySelectorAll('.carousel-text');
-for (var i = 0, max = carouselTextElements.length; i < max; i++) {
-    console.log(carouselTextElements[i]);
-    carouselTextElements[i].style.transform = `translateY(${carouselHeight/2.15}px)`;
+
+for (var h = 0, max = carouselTextElements.length; h < max; h++) {
+    for (var i = 0, max = carouselTextElements.length; i < max; i++) {
+        console.log(carouselTextElements[i]);
+        carouselTextElements[i].style.transform = `translateY(${carouselHeight/2.15}px)`;
+    }
 }
